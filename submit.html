@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Your Book – Thriveon</title>
+  <meta name="description" content="Submit your book to Thriveon for professional marketing support. Tell us about your project and goals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.svg" alt="Thriveon – Book Marketing That Drives Sales" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="submit.html" class="active">Submit Your Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a href="submit.html" class="btn btn-primary">Get Started</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Submit Your Book</h1>
+      <p>Tell us about your project. We’ll review your submission and follow up within 2–3 business days.</p>
+    </div>
+  </section>
+
+  <section class="section bg-offwhite">
+    <div class="container form-section">
+      <div class="form-card">
+        <form id="author-form" action="https://formspree.io/f/mqpqepwg" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="author-name">Author Name <span class="required">*</span></label>
+              <input type="text" id="author-name" name="author_name" required placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="book-title">Book Title <span class="required">*</span></label>
+              <input type="text" id="book-title" name="book_title" required placeholder="Title of the book" />
+            </div>
+            <div class="form-group">
+              <label for="genre">Genre / Category <span class="required">*</span></label>
+              <input type="text" id="genre" name="genre" required placeholder="e.g. Fantasy, Romance, Business" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="stage">Current Stage <span class="required">*</span></label>
+            <select id="stage" name="stage" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="pre-publication">Pre-publication / manuscript stage</option>
+              <option value="pre-order">Pre-order / upcoming launch</option>
+              <option value="recently-published">Recently published (last 6 months)</option>
+              <option value="backlist">Published longer / backlist title</option>
+              <option value="series">Part of an existing series</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="package">Preferred Package <span class="required">*</span></label>
+            <select id="package" name="package" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Basic – $899">Basic – $899</option>
+              <option value="Advanced – $1,899">Advanced – $1,899 (Most Popular)</option>
+              <option value="Premium – $2,699">Premium – $2,699</option>
+              <option value="Not sure – need guidance">Not sure – need guidance</option>
+            </select>
+            <p class="form-note"><a href="pricing.html" style="color:var(--gold);">Compare packages →</a></p>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Tell us about your book &amp; goals <span class="required">*</span></label>
+            <textarea id="description" name="description" required placeholder="Brief synopsis, target audience, what success looks like for you, any previous marketing experience..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="budget">Approximate monthly budget (optional)</label>
+              <select id="budget" name="budget">
+                <option value="" selected>Prefer not to say</option>
+                <option value="Under $300">Under $300</option>
+                <option value="$300 – $750">$300 – $750</option>
+                <option value="$750 – $1,500">$750 – $1,500</option>
+                <option value="$1,500 – $3,000">$1,500 – $3,000</option>
+                <option value="$3,000+">$3,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="website">Author website or Amazon link (optional)</label>
+              <input type="url" id="website" name="website" placeholder="https://" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="how-heard">How did you hear about Thriveon? (optional)</label>
+            <input type="text" id="how-heard" name="how_heard" placeholder="Social media, referral, search..." />
+          </div>
+
+          <input type="hidden" name="_subject" value="New Book Submission – Thriveon" />
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+          <p class="form-note">We respect your privacy. Your information is only used to evaluate and respond to your submission.</p>
+        </form>
+
+        <div id="form-success" class="form-success">
+          <div class="icon">✓</div>
+          <h3>Thank you for submitting!</h3>
+          <p>We’ve received your information and will review it carefully. Expect a reply within 2–3 business days.</p>
+          <a href="index.html" class="btn btn-outline mt-2">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.svg" alt="Thriveon – Book Marketing That Drives Sales" />
+          </a>
+          <p>Strategic book marketing for authors who want to build lasting careers, not just temporary spikes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="submit.html">Submit Your Book</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Packages</h4>
+          <a href="pricing.html">Basic – $899</a>
+          <a href="pricing.html">Advanced – $1,899</a>
+          <a href="pricing.html">Premium – $2,699</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="contact.html">Contact form</a>
+          <a href="submit.html">Submit your book</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Thriveon. All rights reserved.</span>
+        <span>Built for authors who want to thrive.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

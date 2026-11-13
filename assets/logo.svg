@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4E5A6"/>
+      <stop offset="30%" stop-color="#D2AA39"/>
+      <stop offset="100%" stop-color="#B98619"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#071E32"/>
+  <g opacity="0.95">
+    <path d="M256 94C182 94 128 148 128 222V270C128 344 182 398 256 398C330 398 384 344 384 270V222C384 148 330 94 256 94Z" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M209 118L256 154L303 118" stroke="url(#gold)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M256 117L256 220" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M154 178C171 165 191 158 212 158H293C318 158 339 166 356 182" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M153 297C177 278 207 270 240 270H272C303 270 334 278 358 297" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.95">
+    <path d="M221 245L256 245L256 238L327 238L327 245L325 245L325 320L327 320L256 320L256 314L221 314L221 245Z" fill="url(#gold)"/>
+    <path d="M220 240L207 240L207 329L220 329L220 240Z" fill="url(#gold)"/>
+    <path d="M191 260L220 260L220 279L191 279L191 260Z" fill="url(#gold)"/>
+    <path d="M173 208L160 208L160 298L173 298L173 208Z" fill="url(#gold)"/>
+  </g>
+  <g>
+    <path d="M120 293L254 149L247 136L322 136L351 170L324 171L341 197L380 238L359 254L304 192L279 218L222 276L120 293Z" fill="url(#gold)"/>
+    <path d="M302 219L382 138" stroke="#F7D26A" stroke-width="10" stroke-linecap="round"/>
+    <path d="M367 139L382 138L389 153" stroke="#F7D26A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g opacity="0.9">
+    <path d="M128 364C156 333 197 313 242 313H270C315 313 356 333 384 364" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M145 390C173 378 201 371 230 371H282C311 371 339 378 367 390" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

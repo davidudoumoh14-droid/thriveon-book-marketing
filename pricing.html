@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing – Thriveon Book Marketing</title>
+  <meta name="description" content="Simple, clear pricing for Thriveon’s 90-day book marketing roadmap packages. Basic $899 · Advanced $1,899 · Premium $2,699." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; }
+    .price-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px; padding: 2rem 1.75rem; display: flex; flex-direction: column; position: relative; transition: all var(--transition); }
+    .price-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .price-card.popular { border: 2px solid var(--gold); box-shadow: 0 8px 30px rgba(201, 162, 39, 0.18); }
+    .popular-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--navy); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 50px; white-space: nowrap; }
+    .price-card h3 { font-family: "Fredoka", system-ui, sans-serif; font-size: 1.5rem; color: var(--navy); margin-bottom: 0.5rem; }
+    .price-amount { font-size: 2.5rem; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 0.25rem; }
+    .price-amount span { font-size: 0.95rem; font-weight: 500; color: var(--gray-500); }
+    .price-desc { font-size: 0.92rem; color: var(--gray-500); margin: 1rem 0 1.5rem; min-height: 3.2em; }
+    .price-features { list-style: none; margin-bottom: 2rem; flex-grow: 1; }
+    .price-features li { font-size: 0.92rem; color: var(--gray-700); padding: 0.45rem 0; padding-left: 1.6rem; position: relative; border-bottom: 1px solid var(--gray-100); }
+    .price-features li:last-child { border-bottom: none; }
+    .price-features li::before { content: "✓"; position: absolute; left: 0; color: var(--gold-dark); font-weight: 700; }
+    .price-note { text-align: center; max-width: 640px; margin: 3rem auto 0; font-size: 0.95rem; color: var(--gray-500); }
+    @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; } .price-card.popular { order: -1; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.svg" alt="Thriveon – Book Marketing That Drives Sales" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html" class="active">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="submit.html">Submit Your Book</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a href="submit.html" class="btn btn-primary">Get Started</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Simple, Clear Pricing</h1>
+      <p>Choose the 90-day roadmap package that fits your goals. Every plan includes a custom roadmap and guided email support — no one-on-one consultations.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Basic</h3>
+          <div class="price-amount">$899 <span>USD</span></div>
+          <p class="price-desc">A solid foundation to get your book marketing moving with clarity and structure.</p>
+          <ul class="price-features">
+            <li>Custom 90-day book marketing roadmap</li>
+            <li>Core strategy &amp; priority milestones</li>
+            <li>Actionable templates &amp; checklists</li>
+            <li>Email support throughout the 90 days</li>
+            <li>Progress review at Day 45 &amp; Day 90</li>
+            <li>Resource library access (standard)</li>
+            <li>Roadmap delivery within 7–10 days</li>
+          </ul>
+          <a href="submit.html" class="btn btn-outline" style="width:100%">Get Started</a>
+        </div>
+
+        <div class="price-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Advanced</h3>
+          <div class="price-amount">$1,899 <span>USD</span></div>
+          <p class="price-desc">Deeper strategy, more resources, and stronger ongoing guidance for serious growth.</p>
+          <ul class="price-features">
+            <li>Everything in Basic</li>
+            <li>Expanded multi-channel marketing plan</li>
+            <li>Audience positioning &amp; messaging guide</li>
+            <li>Priority email support (faster responses)</li>
+            <li>Three structured progress reviews</li>
+            <li>Bonus resource pack (templates + scripts)</li>
+            <li>Launch / relaunch sequence outline</li>
+            <li>Resource library access (full)</li>
+            <li>Roadmap delivery within 5–7 days</li>
+          </ul>
+          <a href="submit.html" class="btn btn-primary" style="width:100%">Get Started</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Premium</h3>
+          <div class="price-amount">$2,699 <span>USD</span></div>
+          <p class="price-desc">Our most comprehensive package for authors who want maximum clarity, resources, and support.</p>
+          <ul class="price-features">
+            <li>Everything in Advanced</li>
+            <li>Fully customized 90-day + 30-day extension roadmap</li>
+            <li>Complete content &amp; promotion calendar</li>
+            <li>Sales funnel &amp; offer strategy outline</li>
+            <li>Highest priority email support</li>
+            <li>Four structured progress reviews</li>
+            <li>Premium resource vault (all templates, scripts &amp; trackers)</li>
+            <li>Post-roadmap 30-day action plan</li>
+            <li>Fastest roadmap delivery (3–5 days)</li>
+          </ul>
+          <a href="submit.html" class="btn btn-outline" style="width:100%">Get Started</a>
+        </div>
+      </div>
+
+      <p class="price-note">
+        All plans are delivered digitally. Support is provided via email only. There are no live one-on-one consultation calls included in any package.
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Ready to begin?</h2>
+      <p>Submit your book details and tell us which plan you prefer. We’ll follow up within 2–3 business days.</p>
+      <a href="submit.html" class="btn btn-primary">Submit Your Book</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.svg" alt="Thriveon – Book Marketing That Drives Sales" />
+          </a>
+          <p>Strategic book marketing for authors who want to build lasting careers, not just temporary spikes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+          <a href="submit.html">Submit Your Book</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Packages</h4>
+          <a href="pricing.html">Basic – $899</a>
+          <a href="pricing.html">Advanced – $1,899</a>
+          <a href="pricing.html">Premium – $2,699</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="contact.html">Contact form</a>
+          <a href="submit.html">Submit your book</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Thriveon. All rights reserved.</span>
+        <span>Built for authors who want to thrive.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
